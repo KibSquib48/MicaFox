@@ -1,6 +1,6 @@
 # firefox-mica
 Firefox CSS theme to match Windows 11
-![image](https://user-images.githubusercontent.com/33189136/153510704-1471558a-25a2-4c15-873b-e6e0d0a36ddd.png)
+![image](https://user-images.githubusercontent.com/33189136/153510744-52faefda-cd11-44b0-b7b9-3d4c273a01cc.png)
 
 # To Do
 - Support light theme/other themes
