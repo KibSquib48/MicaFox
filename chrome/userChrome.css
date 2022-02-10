@@ -29,7 +29,6 @@
 	--toolbar-field-icon-fill-attention: -moz-accent-color !important;
 	--button-primary-hover-bgcolor: color-mix(in srgb,-moz-accent-color 90%, white) !important;
 	--button-primary-active-bgcolor: color-mix(in srgb,-moz-accent-color 90%, black) !important;
-	--tab-block-margin: 8px !important;
 	--in-content-primary-button-background: -moz-accent-color !important;
 	--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
 	--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
@@ -50,7 +49,4 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 }
 .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
 	width: 0px !important;
-}
-#TabsToolbar {
-	margin-inline-start: 4px !important;
 }
