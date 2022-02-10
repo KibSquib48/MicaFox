@@ -32,6 +32,7 @@
 	--in-content-primary-button-background: -moz-accent-color !important;
 	--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
 	--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
+	--lwt-brighttext-url-color: color-mix(in srgb,-moz-accent-color 80%, white) !important3;
 }
 
 toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .text-link {
