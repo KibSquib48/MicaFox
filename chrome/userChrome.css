@@ -30,6 +30,9 @@
 	--button-primary-hover-bgcolor: color-mix(in srgb,-moz-accent-color 90%, white) !important;
 	--button-primary-active-bgcolor: color-mix(in srgb,-moz-accent-color 90%, black) !important;
 	--tab-block-margin: 8px !important;
+	--in-content-primary-button-background: -moz-accent-color !important;
+	--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
+	--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
 }
 
 toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .text-link {
