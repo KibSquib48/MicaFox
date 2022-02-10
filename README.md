@@ -1,2 +1,7 @@
 # firefox-mica
-firefox theme to match windows 11
+Firefox CSS theme to match Windows 11
+
+# To Do
+- Support light theme/other themes
+- Style context menus
+- Create installation script (including custom Mica background)
