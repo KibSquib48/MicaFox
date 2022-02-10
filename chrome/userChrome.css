@@ -46,5 +46,8 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 	border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
-	width: 4px !important;
+	width: 0px !important;
+}
+#TabsToolbar {
+	margin-inline-start: 4px !important;
 }
