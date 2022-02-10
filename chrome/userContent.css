@@ -1,0 +1,37 @@
+:root {    
+	--in-content-primary-button-background : -moz-accent-color !important;
+}
+
+::selection {
+	background-color: -moz-accent-color;
+}
+
+@-moz-document url-prefix(about:home), url-prefix(about:newtab) {
+	.click-target-container *, .top-sites-list * {
+		color: #fff !important; text-shadow: 2px 2px 2px #000 !important;
+	}
+
+	body {
+		background: url(mica.png) !important;
+		background-size: cover !important;
+		--newtab-background-color-secondary: rgba(255, 255, 255, 0.05) !important;
+	}
+	.search-wrapper .search-handoff-button, .search-wrapper input {
+		border: 1px solid rgba(255,255,255,0.05) !important;
+	}
+}
+
+@-moz-document url-prefix(about:preferences), url-prefix(about:addons), url-prefix(about:config), url-prefix(about:profiles), url-prefix(about:support), url-prefix(about:buildconfig), url-prefix(about:cache), url-prefix(about:about), url-prefix(about:devtools), url-prefix(about:license), url-prefix(about:profiling), url-prefix(about:rights), url-prefix(about:robots), url-prefix(about:serviceworkers), url-prefix(about:telemetry), url-prefix(about:third-party), url-prefix(about:unloads), url-prefix(about:url-classifier) {
+	h1 {
+		font-size: 40px !important;
+		font-weight: 600 !important;
+	}
+	h2 {
+		font-size: 18px !important;
+		font-weight: 400 !important;
+	}
+	* {
+		--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
+		--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
+	}
+}
