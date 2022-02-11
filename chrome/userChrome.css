@@ -56,3 +56,7 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
 	width: 0px !important;
 }
+
+.tabbrowser-tab:hover .tab-background:not([selected]) {
+  background-color: rgba(255,255,255,0.05) !important;3
+}
