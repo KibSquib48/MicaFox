@@ -39,3 +39,7 @@
 		--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
 	}
 }
+
+* {
+	--in-content-focus-outline-color: #ffffff !important;
+}
