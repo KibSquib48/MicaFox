@@ -13,7 +13,7 @@
 
 * {
 	--button-primary-bgcolor: -moz-accent-color !important;
-	--focus-outline-color: -moz-accent-color !important;
+	--focus-outline-color: #ffffff !important;
 	--download-progress-fill-color: -moz-accent-color !important;
 	--toolbarbutton-icon-fill-attention: -moz-accent-color !important;
 	--lwt-selected-tab-background-color: rgba(255, 255, 255, 0.05) !important;
@@ -33,6 +33,7 @@
 	--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
 	--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
 	--lwt-brighttext-url-color: color-mix(in srgb,-moz-accent-color 80%, white) !important;
+	--tab-loading-fill: -moz-accent-color !important;
 }
 
 toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .text-link {
