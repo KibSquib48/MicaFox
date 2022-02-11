@@ -20,6 +20,7 @@
 	--toolbar-bgcolor: transparent !important;
 	--toolbar-field-border-color: rgba(255, 255, 255, 0.05) !important;
 	--toolbar-field-background-color: rgba(255, 255, 255, 0.05) !important;
+	--toolbar-field-focus-border-color: color-mix(in srgb, -moz-accent-color 50%, transparent) !important;
 	--tab-line-color: rgba(255,255,255,0.05) !important;
 	--button-hover-bgcolor: rgba(255, 255, 255, 0.05) !important;
 	--button-active-bgcolor: rgba(255, 255, 255, 0.10) !important;
