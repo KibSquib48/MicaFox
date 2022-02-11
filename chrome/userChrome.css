@@ -44,12 +44,15 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 #navigator-toolbox {
 	background-image: url(mica.png) !important;
 }
+
 #nav-bar {
 	background: transparent !important;
 }
+
 .tab-background:is([selected], [multiselected]):-moz-lwtheme {
 	border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
+
 .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
 	width: 0px !important;
 }
