@@ -1,5 +1,12 @@
-:root {    
-	--in-content-primary-button-background : -moz-accent-color !important;
+:root {
+	--fluent-accent: color-mix(in srgb,-moz-accent-color 70%, white);
+	--in-content-primary-button-background : var(--fluent-accent) !important;
+	--in-content-primary-button-background-hover: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
+	--in-content-primary-button-background-active: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
+	--in-content-focus-outline-color: #ffffff !important;
+	--in-content-table-background: transparent !important;
+	--in-content-page-background: transparent !important;
+	--in-content-box-background: transparent !important;
 }
 
 ::selection {
@@ -10,7 +17,6 @@
 	.click-target-container *, .top-sites-list * {
 		color: #fff !important; text-shadow: 2px 2px 2px #000 !important;
 	}
-
 	body {
 		background: url(mica.png) !important;
 		background-size: cover !important;
@@ -34,12 +40,7 @@
 		font-size: 18px !important;
 		font-weight: 400 !important;
 	}
-	* {
-		--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
-		--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
+	body {
+		background-image: url(mica.png) !important;
 	}
-}
-
-* {
-	--in-content-focus-outline-color: #ffffff !important;
 }
