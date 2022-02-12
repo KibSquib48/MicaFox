@@ -1,9 +1,5 @@
 @import url(./icons/icons.css);
 
-::selection {
-	background-color: -moz-accent-color !important;
-}
-
 #context-navigation {
 	display: none !important;
 }
@@ -12,33 +8,38 @@
 }
 
 * {
-	--button-primary-bgcolor: -moz-accent-color !important;
+	--fluent-accent: color-mix(in srgb,-moz-accent-color 70%, white);
+	--button-primary-bgcolor: var(--fluent-accent) !important;
 	--focus-outline-color: #ffffff !important;
-	--download-progress-fill-color: -moz-accent-color !important;
-	--toolbarbutton-icon-fill-attention: -moz-accent-color !important;
+	--download-progress-fill-color: var(--fluent-accent) !important;
+	--toolbarbutton-icon-fill-attention: var(--fluent-accent) !important;
 	--lwt-selected-tab-background-color: rgba(255, 255, 255, 0.05) !important;
 	--toolbar-bgcolor: transparent !important;
 	--toolbar-field-border-color: rgba(255, 255, 255, 0.05) !important;
 	--toolbar-field-background-color: rgba(255, 255, 255, 0.05) !important;
-	--toolbar-field-focus-border-color: color-mix(in srgb, -moz-accent-color 50%, transparent) !important;
+	--toolbar-field-focus-border-color: color-mix(in srgb, var(--fluent-accent) 50%, transparent) !important;
 	--tab-line-color: rgba(255,255,255,0.05) !important;
 	--button-hover-bgcolor: rgba(255, 255, 255, 0.05) !important;
 	--button-active-bgcolor: rgba(255, 255, 255, 0.10) !important;
 	--toolbar-field-focus-background-color: #1F1F1F !important;
 	--toolbarbutton-border-radius: 6px !important;
 	--tab-border-radius: 6px !important;
-	--toolbar-field-icon-fill-attention: -moz-accent-color !important;
-	--button-primary-hover-bgcolor: color-mix(in srgb,-moz-accent-color 90%, white) !important;
-	--button-primary-active-bgcolor: color-mix(in srgb,-moz-accent-color 90%, black) !important;
-	--in-content-primary-button-background: -moz-accent-color !important;
-	--in-content-primary-button-background-hover: color-mix(in srgb,-moz-accent-color 90%, white) !important;
-	--in-content-primary-button-background-active: color-mix(in srgb,-moz-accent-color 90%, black) !important;
-	--lwt-brighttext-url-color: color-mix(in srgb,-moz-accent-color 80%, white) !important;
-	--tab-loading-fill: -moz-accent-color !important;
+	--toolbar-field-icon-fill-attention: var(--fluent-accent) !important;
+	--button-primary-hover-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
+	--button-primary-active-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
+	--in-content-primary-button-background: var(--fluent-accent) !important;
+	--in-content-primary-button-background-hover: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
+	--in-content-primary-button-background-active: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
+	--lwt-brighttext-url-color: color-mix(in srgb,var(--fluent-accent) 80%, white) !important;
+	--tab-loading-fill: var(--fluent-accent) !important;
+}
+
+::selection {
+	background-color: -moz-accent-color !important;
 }
 
 toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .text-link {
-	color: -moz-accent-color !important;
+	color: var(--fluent-accent) !important;
 }
 
 #navigator-toolbox {
@@ -59,4 +60,8 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 
 .tabbrowser-tab:hover .tab-background:not([selected]) {
   background-color: rgba(255,255,255,0.05) !important;
+}
+
+#tabbrowser-tabpanels{
+	background: #202020 !important
 }
