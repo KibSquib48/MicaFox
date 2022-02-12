@@ -7,3 +7,6 @@ Firefox CSS theme to match Windows 11
 - Support light theme/other themes
 - Style context menus
 - Create installation script (including custom Mica background)
+
+# Notes
+enable `layout.css.color-mix.enabled` in about:config
