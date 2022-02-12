@@ -58,5 +58,5 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 }
 
 .tabbrowser-tab:hover .tab-background:not([selected]) {
-  background-color: rgba(255,255,255,0.05) !important;3
+  background-color: rgba(255,255,255,0.05) !important;
 }
