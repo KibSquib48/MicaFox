@@ -42,10 +42,6 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 	color: var(--fluent-accent) !important;
 }
 
-#navigator-toolbox {
-	background-image: url(mica.png) !important;
-}
-
 #nav-bar {
 	background: transparent !important;
 }
@@ -64,4 +60,24 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 
 #tabbrowser-tabpanels{
 	background: #202020 !important
+}
+
+/* REAL mica */
+#main-window {
+	background-color: transparent !important;
+	-moz-appearance: -moz-win-glass !important;
+}
+#navigator-toolbox {
+	background: transparent !important;
+}
+/* fix duplicate title bar buttons */
+.titlebar-buttonbox-container {
+	display: block;
+}
+.titlebar-buttonbox {
+	height: 30px;
+}
+.titlebar-button:not(.titlebar-close),
+.titlebar-close:not(:hover) {
+	list-style-image: none !important;
 }
