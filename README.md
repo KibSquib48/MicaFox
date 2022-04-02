@@ -18,4 +18,5 @@ enable `layout.css.color-mix.enabled` in about:config
 ![image](https://user-images.githubusercontent.com/33189136/161386277-f0bc4584-99cd-4476-97a8-c84cf874a8f5.png)
 
 **(Windows 11 22523 and above only)** If you prefer it, you may change it to Acrylic blur or Tabbed:
+
 ![image](https://user-images.githubusercontent.com/33189136/161386474-b37c28cb-5425-45d6-b605-8476fddf996e.png)
