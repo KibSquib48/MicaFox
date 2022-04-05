@@ -1,6 +1,3 @@
-# IMPORTANT
-I'm probably not going to update this theme for a while because I'm moving to another browser, anyone is free to fork and update this theme if you wish
-
 # MicaFox
 Firefox CSS theme to match Windows 11
 
