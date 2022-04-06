@@ -1,5 +1,3 @@
-@import url(./icons/icons.css);
-
 #context-navigation {
 	display: none !important;
 }
@@ -9,11 +7,12 @@
 
 * {
 	--fluent-accent: color-mix(in srgb,-moz-accent-color 70%, white);
+	--mica-background: rgba(180,180,180,0.05);
 	--button-primary-bgcolor: var(--fluent-accent) !important;
 	--focus-outline-color: #ffffff !important;
 	--download-progress-fill-color: var(--fluent-accent) !important;
 	--toolbarbutton-icon-fill-attention: var(--fluent-accent) !important;
-	--lwt-selected-tab-background-color: rgba(255, 255, 255, 0.05) !important;
+	--lwt-selected-tab-background-color: var(--mica-background) !important;
 	--toolbar-bgcolor: transparent !important;
 	--toolbar-field-border-color: rgba(255, 255, 255, 0.05) !important;
 	--toolbar-field-background-color: rgba(255, 255, 255, 0.05) !important;
@@ -21,9 +20,9 @@
 	--tab-line-color: rgba(255,255,255,0.05) !important;
 	--button-hover-bgcolor: rgba(255, 255, 255, 0.05) !important;
 	--button-active-bgcolor: rgba(255, 255, 255, 0.10) !important;
-	--toolbar-field-focus-background-color: #1F1F1F !important;
-	--toolbarbutton-border-radius: 6px !important;
-	--tab-border-radius: 6px !important;
+	--toolbar-field-focus-background-color: #202020 !important;
+	--toolbarbutton-border-radius: 8px !important;
+	--tab-border-radius: 8px !important;
 	--toolbar-field-icon-fill-attention: var(--fluent-accent) !important;
 	--button-primary-hover-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
 	--button-primary-active-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
@@ -43,23 +42,12 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 }
 
 #nav-bar {
-	background: transparent !important;
-}
-
-.tab-background:is([selected], [multiselected]):-moz-lwtheme {
-	border: 1px solid rgba(255, 255, 255, 0.05) !important;
-}
-
-.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
-	width: 0px !important;
+	background: var(--mica-background)!important;
 }
 
 .tabbrowser-tab:hover .tab-background:not([selected]) {
-  background-color: rgba(255,255,255,0.05) !important;
-}
-
-#tabbrowser-tabpanels{
-	background: #202020 !important
+  background-color: var(--mica-background) !important;
+  transition: 0.2s;
 }
 
 /* REAL mica */
@@ -80,4 +68,29 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 .titlebar-button:not(.titlebar-close),
 .titlebar-close:not(:hover) {
 	list-style-image: none !important;
+}
+
+/* adding drag space before 1st tab */
+:root[sizemode="normal"] .titlebar-spacer[type=pre-tabs] {
+	display: -moz-box !important;
+	width: 8px !important;
+}
+
+:root:not([sizemode="normal"]) .titlebar-spacer[type=pre-tabs] {
+	display: -moz-box !important;
+	width: 8px !important;
+}
+
+/* winui tabview */
+.tab-background {
+	margin-top: 6px !important;
+	margin-bottom: -6px !important;
+}
+
+.tab-content {
+	margin-bottom: -4px !important;
+}
+
+.tab-secondary-label[soundplaying="true"]:not([pictureinpicture]){
+	display: none
 }
