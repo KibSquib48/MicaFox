@@ -14,14 +14,13 @@
 	--toolbarbutton-icon-fill-attention: var(--fluent-accent) !important;
 	--lwt-selected-tab-background-color: var(--mica-background) !important;
 	--toolbar-bgcolor: transparent !important;
-	--toolbar-field-border-color: rgba(255, 255, 255, 0.05) !important;
 	--toolbar-field-background-color: rgba(255, 255, 255, 0.05) !important;
 	--toolbar-field-focus-border-color: color-mix(in srgb, var(--fluent-accent) 50%, transparent) !important;
 	--tab-line-color: rgba(255,255,255,0.05) !important;
 	--button-hover-bgcolor: rgba(255, 255, 255, 0.05) !important;
 	--button-active-bgcolor: rgba(255, 255, 255, 0.10) !important;
 	--toolbar-field-focus-background-color: #202020 !important;
-	--toolbarbutton-border-radius: 8px !important;
+	--toolbarbutton-border-radius: 4px !important;
 	--tab-border-radius: 8px !important;
 	--toolbar-field-icon-fill-attention: var(--fluent-accent) !important;
 	--button-primary-hover-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
@@ -31,10 +30,12 @@
 	--in-content-primary-button-background-active: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
 	--lwt-brighttext-url-color: color-mix(in srgb,var(--fluent-accent) 80%, white) !important;
 	--tab-loading-fill: var(--fluent-accent) !important;
+	--tab-min-height: 36px !important;
 }
 
 ::selection {
 	background-color: -moz-accent-color !important;
+	color: white !important;
 }
 
 toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .text-link {
@@ -47,7 +48,6 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 
 .tabbrowser-tab:hover .tab-background:not([selected]) {
   background-color: var(--mica-background) !important;
-  transition: 0.2s;
 }
 
 /* REAL mica */
@@ -81,16 +81,12 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 	width: 8px !important;
 }
 
-/* winui tabview */
-.tab-background {
-	margin-top: 6px !important;
-	margin-bottom: -6px !important;
-}
-
-.tab-content {
-	margin-bottom: -4px !important;
-}
-
+/* disable PLAYING indicator */
 .tab-secondary-label[soundplaying="true"]:not([pictureinpicture]){
 	display: none
+}
+
+/* winui textbox urlbar */
+#urlbar-background, #searchbar {
+	border-bottom: 1px solid rgba(255,255,255,0.25) !important;
 }
