@@ -1,62 +1,15 @@
-#context-navigation {
-	display: none !important;
-}
-#context-sep-navigation {
-	display: none !important;
-}
+@import "./accent.css";
 
-* {
-	--fluent-accent: color-mix(in srgb,-moz-accent-color 70%, white);
-	--mica-background: rgba(180,180,180,0.05);
-	--button-primary-bgcolor: var(--fluent-accent) !important;
-	--focus-outline-color: #ffffff !important;
-	--download-progress-fill-color: var(--fluent-accent) !important;
-	--toolbarbutton-icon-fill-attention: var(--fluent-accent) !important;
-	--lwt-selected-tab-background-color: var(--mica-background) !important;
-	--toolbar-bgcolor: transparent !important;
-	--toolbar-field-background-color: rgba(255, 255, 255, 0.05) !important;
-	--toolbar-field-focus-border-color: color-mix(in srgb, var(--fluent-accent) 50%, transparent) !important;
-	--tab-line-color: rgba(255,255,255,0.05) !important;
-	--button-hover-bgcolor: rgba(255, 255, 255, 0.05) !important;
-	--button-active-bgcolor: rgba(255, 255, 255, 0.10) !important;
-	--toolbar-field-focus-background-color: #202020 !important;
-	--toolbarbutton-border-radius: 4px !important;
-	--tab-border-radius: 8px !important;
-	--toolbar-field-icon-fill-attention: var(--fluent-accent) !important;
-	--button-primary-hover-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
-	--button-primary-active-bgcolor: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
-	--in-content-primary-button-background: var(--fluent-accent) !important;
-	--in-content-primary-button-background-hover: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
-	--in-content-primary-button-background-active: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
-	--lwt-brighttext-url-color: color-mix(in srgb,var(--fluent-accent) 80%, white) !important;
-	--tab-loading-fill: var(--fluent-accent) !important;
-	--tab-min-height: 36px !important;
-}
-
-::selection {
-	background-color: -moz-accent-color !important;
-	color: white !important;
-}
-
-toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .text-link {
-	color: var(--fluent-accent) !important;
-}
-
-#nav-bar {
-	background: var(--mica-background)!important;
-}
-
-.tabbrowser-tab:hover .tab-background:not([selected]) {
-  background-color: var(--mica-background) !important;
-}
-
-/* REAL mica */
+/* Mica */
 #main-window {
 	background-color: transparent !important;
 	-moz-appearance: -moz-win-glass !important;
 }
 #navigator-toolbox {
 	background: transparent !important;
+}
+#TabsToolbar {
+	background-image: none !important;    /* Windows 7 */
 }
 /* fix duplicate title bar buttons */
 .titlebar-buttonbox-container {
@@ -70,23 +23,7 @@ toolbar[brighttext] .text-link:-moz-lwtheme, :root[lwt-popup-brighttext] panel .
 	list-style-image: none !important;
 }
 
-/* adding drag space before 1st tab */
-:root[sizemode="normal"] .titlebar-spacer[type=pre-tabs] {
-	display: -moz-box !important;
-	width: 8px !important;
-}
-
-:root:not([sizemode="normal"]) .titlebar-spacer[type=pre-tabs] {
-	display: -moz-box !important;
-	width: 8px !important;
-}
-
-/* disable PLAYING indicator */
-.tab-secondary-label[soundplaying="true"]:not([pictureinpicture]){
-	display: none
-}
-
-/* winui textbox urlbar */
-#urlbar-background, #searchbar {
-	border-bottom: 1px solid rgba(255,255,255,0.25) !important;
+/* Segoe UI Variable */
+* {
+	font-family: "Segoe UI Variable" !important;
 }

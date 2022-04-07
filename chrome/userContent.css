@@ -1,15 +1,11 @@
+@import "./accent.css";
+
 :root {
-	--in-content-primary-button-background : var(--fluent-accent) !important;
-	--in-content-primary-button-background-hover: color-mix(in srgb,var(--fluent-accent) 90%, white) !important;
-	--in-content-primary-button-background-active: color-mix(in srgb,var(--fluent-accent) 90%, black) !important;
-	--in-content-focus-outline-color: #ffffff !important;
+	--in-content-primary-button-text-color: var(--fluent-accent-text) !important;
+	--in-content-primary-button-background: var(--fluent-accent) !important;
 }
 
-* {
-		--fluent-accent: color-mix(in srgb,-moz-accent-color 70%, white);
-}
-
-@-moz-document url-prefix(about:preferences), url-prefix(about:addons), url-prefix(about:config), url-prefix(about:profiles), url-prefix(about:support), url-prefix(about:buildconfig), url-prefix(about:cache), url-prefix(about:about), url-prefix(about:devtools), url-prefix(about:license), url-prefix(about:profiling), url-prefix(about:rights), url-prefix(about:robots), url-prefix(about:serviceworkers), url-prefix(about:telemetry), url-prefix(about:third-party), url-prefix(about:unloads), url-prefix(about:url-classifier) {
+@-moz-document url-prefix(about:) {
 	h1 {
 		font-size: 40px !important;
 		font-weight: 600 !important;
@@ -21,5 +17,8 @@
 	h2 {
 		font-size: 18px !important;
 		font-weight: 400 !important;
+	}
+	* {
+		font-family: "Segoe UI Variable" !important;
 	}
 }
