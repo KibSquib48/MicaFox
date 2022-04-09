@@ -1,4 +1,25 @@
-@import "./accent.css";
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fluent-accent: color-mix(in srgb, #f3f3f3 25%, -moz-accent-color);
+		--fluent-accent-text: #000;
+		--mica-background: rgba(255,255,255,0.05);
+	}
+	::selection {
+		background-color: color-mix(in srgb, #f3f3f3 25%, -moz-accent-color) !important;
+		color: #000 !important;
+	}
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--fluent-accent: color-mix(in srgb, #202020 15%, -moz-accent-color);
+		--fluent-accent-text: #fff;
+		--mica-background: rgba(255,255,255,0.5);
+	}
+	::selection {
+		background-color: color-mix(in srgb, #202020 15%, -moz-accent-color) !important;
+		color: #fff !important;
+	}
+}
 
 :root {
 	--in-content-primary-button-text-color: var(--fluent-accent-text) !important;

@@ -1,4 +1,65 @@
-@import "./accent.css";
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fluent-accent: color-mix(in srgb, #f3f3f3 25%, -moz-accent-color);
+		--fluent-accent-text: #000;
+		--mica-background: rgba(255,255,255,0.05);
+		--toolbar-field-focus-background-color: #202020 !important;
+		--lwt-selected-tab-background-color: var(--mica-background) !important;
+		--arrowpanel-background: #2c2c2c !important;
+	}
+	::selection {
+		background-color: color-mix(in srgb, #f3f3f3 25%, -moz-accent-color) !important;
+		color: #000 !important;
+	}
+	:focus {
+		color: #fff !important;
+	}
+	menupopup {
+		--menu-background-color: #2c2c2c !important;
+	}
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--fluent-accent: color-mix(in srgb, #202020 15%, -moz-accent-color);
+		--fluent-accent-text: #fff;
+		--mica-background: rgba(255,255,255,0.5);
+		--toolbar-field-focus-background-color: #f3f3f3 !important;
+		--tab-selected-bgcolor: var(--mica-background) !important;
+		--arrowpanel-background: #f9f9f9 !important;
+	}
+	::selection {
+		background-color: color-mix(in srgb, #202020 15%, -moz-accent-color) !important;
+		color: #fff !important;
+	}
+	:focus {
+		color: #000 !important;
+	}
+	menupopup {
+		--menu-background-color: #f9f9f9 !important;
+	}
+}
+
+:root {
+	--toolbar-field-background-color: var(--mica-background) !important;
+	--toolbar-bgcolor: var(--mica-background) !important;
+	--dark-menu-color: var(--mica-background) !important;
+	--menu-border-color: transparent !important;
+	--button-hover-bgcolor: var(--mica-background) !important;
+	--button-active-bgcolor: rgba(255,255,255,0.1) !important;
+}
+
+#context-navigation, #context-sep-navigation {
+	display: none !important;
+}
+
+menupopup {
+	font-size: 12px !important;
+	border-radius: 16px !important;
+	--panel-border-radius: 10px !important;
+}
+menuitem:hover, menuitem[_moz-menuactive="true"], menuitem:active {
+     background-color: var(--mica-background) !important;
+}
 
 /* Mica */
 #main-window {
@@ -11,6 +72,7 @@
 #TabsToolbar {
 	background-image: none !important;    /* Windows 7 */
 }
+
 /* fix duplicate title bar buttons */
 .titlebar-buttonbox-container {
 	display: block;
@@ -26,4 +88,37 @@
 /* Segoe UI Variable */
 * {
 	font-family: "Segoe UI Variable" !important;
+}
+
+/* rounded corner context menu */
+menupopup > menuitem,
+menupopup > menu {
+	border-radius: 8px !important;
+	margin: 0 4px !important;
+}
+ 
+/* context menu top left button padding */
+menugroup > menuitem:first-child {  
+	border-radius: 8px !important;
+	padding: 8px !important;
+}
+/* context menu top right button padding */
+menugroup > menuitem:last-child {  
+	border-radius: 8px !important;
+	padding: 8px !important;
+}
+/* context menu top buttons radius*/
+menugroup > menuitem {
+	border-radius: 8px !important;
+}
+menugroup > menuitem > hbox > image {  
+	border-radius: 8px !important;
+}
+/* for menu item with submenu  */
+.panel-header > .subviewbutton {
+	border-radius: 8px !important;
+}
+
+menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]) {
+	background-color: var(--mica-background) !important;
 }
